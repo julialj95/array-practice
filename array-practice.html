@@ -88,6 +88,11 @@
 
       // Array.prototype.sort()
       // 3. Sort the inventors by birthdate, oldest to youngest
+      //sort takes a function with two parameters, then you specify how you want it to compare those parameters. It will loop through making the comparison until all are sorted.
+      const ageSort = inventors.sort(function (a, b) {
+        return a.year - b.year;
+      });
+      console.log(ageSort);
 
       // Array.prototype.reduce()
       // 4. How many years did all the inventors live all together?
