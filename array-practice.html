@@ -119,6 +119,15 @@
       // 7. sort Exercise
       // Sort the people alphabetically by last name
 
+      const alphabetical = people.sort(function (a, b) {
+        if (a > b) {
+          return 1;
+        } else {
+          return -1;
+        }
+      });
+      console.table(alphabetical);
+
       // 8. Reduce Exercise
       // Sum up the instances of each of these
       const data = [
